@@ -1,0 +1,49 @@
+{
+    "Budget": {
+        "BudgetName": "ccguard-dev-monthly",
+        "BudgetLimit": {
+            "Amount": "100.0",
+            "Unit": "USD"
+        },
+        "TimeUnit": "MONTHLY",
+        "TimePeriod": {
+            "Start": "2026-06-01T07:00:00+07:00",
+            "End": "2087-06-15T07:00:00+07:00"
+        },
+        "CalculatedSpend": {
+            "ActualSpend": {
+                "Amount": "0.0",
+                "Unit": "USD"
+            }
+        },
+        "BudgetType": "COST",
+        "LastUpdatedTime": "2026-06-06T11:39:40.893000+07:00",
+        "FilterExpression": {
+            "And": [
+                {
+                    "Dimensions": {
+                        "Key": "BILLING_ENTITY",
+                        "Values": [
+                            "AWS Marketplace"
+                        ]
+                    }
+                },
+                {
+                    "Dimensions": {
+                        "Key": "RECORD_TYPE",
+                        "Values": [
+                            "Usage"
+                        ]
+                    }
+                }
+            ]
+        },
+        "Metrics": [
+            "UnblendedCost"
+        ],
+        "HealthStatus": {
+            "Status": "HEALTHY",
+            "LastUpdatedTime": "2026-06-06T11:39:40.475000+07:00"
+        }
+    }
+}

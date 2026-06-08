@@ -1,0 +1,8 @@
+{
+    "action": "bedrock:InvokeModelWithResponseStream",
+    "resource": "arn:aws:bedrock:us-east-1:537997492026:application-inference-profile/tb0ytgdw25dg",
+    "decision": "allowed",
+    "matched": [
+        "ccguard-dev-invoke"
+    ]
+}

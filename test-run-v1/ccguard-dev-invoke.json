@@ -1,0 +1,68 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "InvokeApprovedProfiles",
+      "Effect": "Allow",
+      "Action": [
+        "bedrock:InvokeModel",
+        "bedrock:InvokeModelWithResponseStream"
+      ],
+      "Resource": [
+        "arn:aws:bedrock:us-east-1:537997492026:application-inference-profile/oba4m7fxnl7e",
+        "arn:aws:bedrock:us-east-1:537997492026:application-inference-profile/tb0ytgdw25dg",
+        "arn:aws:bedrock:us-east-1:537997492026:inference-profile/us.anthropic.claude-sonnet-4-6",
+        "arn:aws:bedrock:us-east-1:537997492026:inference-profile/us.anthropic.claude-haiku-4-5-20251001-v1:0"
+      ]
+    },
+    {
+      "Sid": "InvokeUnderlyingModelsInMemberRegions",
+      "Effect": "Allow",
+      "Action": [
+        "bedrock:InvokeModel",
+        "bedrock:InvokeModelWithResponseStream"
+      ],
+      "Resource": [
+        "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-sonnet-4-6",
+        "arn:aws:bedrock:us-east-2::foundation-model/anthropic.claude-sonnet-4-6",
+        "arn:aws:bedrock:us-west-2::foundation-model/anthropic.claude-sonnet-4-6",
+        "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-haiku-4-5-20251001-v1:0",
+        "arn:aws:bedrock:us-east-2::foundation-model/anthropic.claude-haiku-4-5-20251001-v1:0",
+        "arn:aws:bedrock:us-west-2::foundation-model/anthropic.claude-haiku-4-5-20251001-v1:0"
+      ],
+      "Condition": {
+        "StringLike": {
+          "bedrock:InferenceProfileArn": [
+            "arn:aws:bedrock:us-east-1:537997492026:application-inference-profile/oba4m7fxnl7e",
+            "arn:aws:bedrock:us-east-1:537997492026:application-inference-profile/tb0ytgdw25dg",
+            "arn:aws:bedrock:us-east-1:537997492026:inference-profile/us.anthropic.claude-sonnet-4-6",
+            "arn:aws:bedrock:us-east-1:537997492026:inference-profile/us.anthropic.claude-haiku-4-5-20251001-v1:0"
+          ]
+        }
+      }
+    },
+    {
+      "Sid": "ResolveProfileArnsAtStartup",
+      "Effect": "Allow",
+      "Action": [
+        "bedrock:ListInferenceProfiles",
+        "bedrock:GetInferenceProfile"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "MarketplaceSubscribeViaBedrockOnly",
+      "Effect": "Allow",
+      "Action": [
+        "aws-marketplace:Subscribe",
+        "aws-marketplace:ViewSubscriptions"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "aws:CalledViaLast": "bedrock.amazonaws.com"
+        }
+      }
+    }
+  ]
+}

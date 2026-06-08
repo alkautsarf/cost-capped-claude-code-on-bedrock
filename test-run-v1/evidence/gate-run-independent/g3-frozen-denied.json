@@ -1,0 +1,88 @@
+{
+    "EvaluationResults": [
+        {
+            "EvalActionName": "bedrock:InvokeModel",
+            "EvalResourceName": "arn:aws:bedrock:us-east-1:537997492026:application-inference-profile/oba4m7fxnl7e",
+            "EvalDecision": "explicitDeny",
+            "MatchedStatements": [
+                {
+                    "SourcePolicyId": "ccguard-dev-frozen",
+                    "SourcePolicyType": "IAM Policy",
+                    "StartPosition": {
+                        "Line": 3,
+                        "Column": 17
+                    },
+                    "EndPosition": {
+                        "Line": 12,
+                        "Column": 6
+                    }
+                }
+            ],
+            "MissingContextValues": [],
+            "EvalDecisionDetails": {},
+            "ResourceSpecificResults": [
+                {
+                    "EvalResourceName": "arn:aws:bedrock:us-east-1:537997492026:application-inference-profile/oba4m7fxnl7e",
+                    "EvalResourceDecision": "explicitDeny",
+                    "MatchedStatements": [
+                        {
+                            "SourcePolicyId": "ccguard-dev-frozen",
+                            "SourcePolicyType": "IAM Policy",
+                            "StartPosition": {
+                                "Line": 3,
+                                "Column": 17
+                            },
+                            "EndPosition": {
+                                "Line": 12,
+                                "Column": 6
+                            }
+                        }
+                    ],
+                    "MissingContextValues": []
+                }
+            ]
+        },
+        {
+            "EvalActionName": "bedrock:InvokeModelWithResponseStream",
+            "EvalResourceName": "arn:aws:bedrock:us-east-1:537997492026:application-inference-profile/oba4m7fxnl7e",
+            "EvalDecision": "explicitDeny",
+            "MatchedStatements": [
+                {
+                    "SourcePolicyId": "ccguard-dev-frozen",
+                    "SourcePolicyType": "IAM Policy",
+                    "StartPosition": {
+                        "Line": 3,
+                        "Column": 17
+                    },
+                    "EndPosition": {
+                        "Line": 12,
+                        "Column": 6
+                    }
+                }
+            ],
+            "MissingContextValues": [],
+            "EvalDecisionDetails": {},
+            "ResourceSpecificResults": [
+                {
+                    "EvalResourceName": "arn:aws:bedrock:us-east-1:537997492026:application-inference-profile/oba4m7fxnl7e",
+                    "EvalResourceDecision": "explicitDeny",
+                    "MatchedStatements": [
+                        {
+                            "SourcePolicyId": "ccguard-dev-frozen",
+                            "SourcePolicyType": "IAM Policy",
+                            "StartPosition": {
+                                "Line": 3,
+                                "Column": 17
+                            },
+                            "EndPosition": {
+                                "Line": 12,
+                                "Column": 6
+                            }
+                        }
+                    ],
+                    "MissingContextValues": []
+                }
+            ]
+        }
+    ]
+}

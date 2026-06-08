@@ -1,0 +1,26 @@
+{
+    "Role": {
+        "Path": "/",
+        "RoleName": "ccguard-budgets-role",
+        "RoleId": "AROAX2QZGH45NKNEIDU6A",
+        "Arn": "arn:aws:iam::537997492026:role/ccguard-budgets-role",
+        "CreateDate": "2026-06-06T04:40:10+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "budgets.amazonaws.com"
+                    },
+                    "Action": "sts:AssumeRole",
+                    "Condition": {
+                        "StringEquals": {
+                            "aws:SourceAccount": "537997492026"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

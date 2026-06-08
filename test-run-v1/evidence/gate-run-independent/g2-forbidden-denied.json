@@ -1,0 +1,48 @@
+{
+    "EvaluationResults": [
+        {
+            "EvalActionName": "bedrock:InvokeModel",
+            "EvalResourceName": "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-opus-4-8",
+            "EvalDecision": "implicitDeny",
+            "MatchedStatements": [],
+            "MissingContextValues": [
+                "aws:CalledViaLast",
+                "bedrock:InferenceProfileArn"
+            ],
+            "EvalDecisionDetails": {},
+            "ResourceSpecificResults": [
+                {
+                    "EvalResourceName": "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-opus-4-8",
+                    "EvalResourceDecision": "implicitDeny",
+                    "MatchedStatements": [],
+                    "MissingContextValues": [
+                        "aws:CalledViaLast",
+                        "bedrock:InferenceProfileArn"
+                    ]
+                }
+            ]
+        },
+        {
+            "EvalActionName": "bedrock:InvokeModelWithResponseStream",
+            "EvalResourceName": "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-opus-4-8",
+            "EvalDecision": "implicitDeny",
+            "MatchedStatements": [],
+            "MissingContextValues": [
+                "aws:CalledViaLast",
+                "bedrock:InferenceProfileArn"
+            ],
+            "EvalDecisionDetails": {},
+            "ResourceSpecificResults": [
+                {
+                    "EvalResourceName": "arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-opus-4-8",
+                    "EvalResourceDecision": "implicitDeny",
+                    "MatchedStatements": [],
+                    "MissingContextValues": [
+                        "aws:CalledViaLast",
+                        "bedrock:InferenceProfileArn"
+                    ]
+                }
+            ]
+        }
+    ]
+}

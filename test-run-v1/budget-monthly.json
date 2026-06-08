@@ -1,0 +1,13 @@
+{
+  "BudgetName": "ccguard-dev-monthly",
+  "BudgetLimit": { "Amount": "100", "Unit": "USD" },
+  "TimeUnit": "MONTHLY",
+  "BudgetType": "COST",
+  "Metrics": ["UnblendedCost"],
+  "FilterExpression": {
+    "And": [
+      { "Dimensions": { "Key": "BILLING_ENTITY", "Values": ["AWS Marketplace"] } },
+      { "Dimensions": { "Key": "RECORD_TYPE", "Values": ["Usage"] } }
+    ]
+  }
+}

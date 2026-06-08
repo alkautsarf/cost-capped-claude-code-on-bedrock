@@ -1,0 +1,9 @@
+{
+    "status": "STANDBY",
+    "type": "APPLY_IAM_POLICY",
+    "policy": "arn:aws:iam::537997492026:policy/ccguard-dev-frozen",
+    "groups": [
+        "ccguard-dev-devs"
+    ],
+    "approval": "AUTOMATIC"
+}

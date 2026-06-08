@@ -1,0 +1,7 @@
+{
+    "action": "bedrock:InvokeModel",
+    "decision": "allowed",
+    "matched": [
+        "ccguard-dev-invoke"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "AttachedPolicies": [
+        {
+            "PolicyName": "ccguard-dev-invoke",
+            "PolicyArn": "arn:aws:iam::537997492026:policy/ccguard-dev-invoke"
+        }
+    ]
+}

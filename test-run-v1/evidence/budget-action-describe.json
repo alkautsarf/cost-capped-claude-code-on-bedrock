@@ -1,0 +1,31 @@
+{
+    "AccountId": "537997492026",
+    "BudgetName": "ccguard-dev-monthly",
+    "Action": {
+        "ActionId": "aae620d8-3881-4257-aab3-15062e50a83f",
+        "BudgetName": "ccguard-dev-monthly",
+        "NotificationType": "ACTUAL",
+        "ActionType": "APPLY_IAM_POLICY",
+        "ActionThreshold": {
+            "ActionThresholdValue": 100.0,
+            "ActionThresholdType": "PERCENTAGE"
+        },
+        "Definition": {
+            "IamActionDefinition": {
+                "PolicyArn": "arn:aws:iam::537997492026:policy/ccguard-dev-frozen",
+                "Groups": [
+                    "ccguard-dev-devs"
+                ]
+            }
+        },
+        "ExecutionRoleArn": "arn:aws:iam::537997492026:role/ccguard-budgets-role",
+        "ApprovalModel": "AUTOMATIC",
+        "Status": "STANDBY",
+        "Subscribers": [
+            {
+                "SubscriptionType": "EMAIL",
+                "Address": "alerts@example.com"
+            }
+        ]
+    }
+}

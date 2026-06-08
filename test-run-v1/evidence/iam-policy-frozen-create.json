@@ -1,0 +1,14 @@
+{
+    "Policy": {
+        "PolicyName": "ccguard-dev-frozen",
+        "PolicyId": "ANPAX2QZGH45OZV2HQNJ2",
+        "Arn": "arn:aws:iam::537997492026:policy/ccguard-dev-frozen",
+        "Path": "/",
+        "DefaultVersionId": "v1",
+        "AttachmentCount": 0,
+        "PermissionsBoundaryUsageCount": 0,
+        "IsAttachable": true,
+        "CreateDate": "2026-06-06T04:40:09+00:00",
+        "UpdateDate": "2026-06-06T04:40:09+00:00"
+    }
+}

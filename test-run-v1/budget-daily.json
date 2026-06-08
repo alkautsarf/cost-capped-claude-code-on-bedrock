@@ -1,0 +1,13 @@
+{
+  "BudgetName": "ccguard-dev-daily",
+  "BudgetLimit": { "Amount": "10", "Unit": "USD" },
+  "TimeUnit": "DAILY",
+  "BudgetType": "COST",
+  "Metrics": ["UnblendedCost"],
+  "FilterExpression": {
+    "And": [
+      { "Dimensions": { "Key": "BILLING_ENTITY", "Values": ["AWS Marketplace"] } },
+      { "Dimensions": { "Key": "RECORD_TYPE", "Values": ["Usage"] } }
+    ]
+  }
+}

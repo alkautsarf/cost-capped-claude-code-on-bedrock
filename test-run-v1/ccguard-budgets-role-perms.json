@@ -1,0 +1,14 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AttachDetachFrozenPolicyOnDevGroup",
+      "Effect": "Allow",
+      "Action": [
+        "iam:AttachGroupPolicy",
+        "iam:DetachGroupPolicy"
+      ],
+      "Resource": "arn:aws:iam::537997492026:group/ccguard-dev-devs"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+    "action": "bedrock:InvokeModel",
+    "decision": "explicitDeny",
+    "matched": [
+        "ccguard-dev-frozen"
+    ]
+}
