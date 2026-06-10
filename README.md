@@ -3,6 +3,20 @@
 A production-ready, copy-paste prompt that deploys Claude Code for a development team on Amazon Bedrock
 with hard spend controls and a Verification Gate that proves the controls fire before declaring success.
 
+## Watch the cutoff fire and reverse (70 seconds)
+
+![Verification Gate drill, recorded live: approved profile allowed, forbidden model denied on both invoke doors, cutoff attached (explicitDeny), reversed (allowed again), zero residue](demo/drill.gif)
+
+A live re-run of the Verification Gate drill, recorded 2026-06-10 against this deployment
+(asciinema source: `demo/drill.cast`, script: `demo/drill.sh`). Every receipt in
+`test-run-v1/evidence/` plus this recording is covered by a recomputable SHA-256 manifest:
+
+```
+shasum -a 256 -c SHA256SUMS
+```
+
+The manifest covers the firing receipts themselves, not just the pre-drill state.
+
 ## What's here
 
 | Path | What it is |
@@ -13,6 +27,8 @@ with hard spend controls and a Verification Gate that proves the controls fire b
 | `test-run-v1/evidence/README.md` | Index of all proof, build receipts + gate drill. |
 | `test-run-v1/cards/` | Sample developer onboarding card template + runbook the prompt emits. |
 | `test-run-v1/teardown.sh` | The reverse-order teardown the prompt generates. |
+| `demo/` | The recorded cutoff drill: `drill.gif` (70s), its asciinema source `drill.cast`, and the exact script `drill.sh` that ran it. |
+| `SHA256SUMS` | Recomputable manifest over all evidence and the recording; verify with `shasum -a 256 -c SHA256SUMS`. |
 
 ## What it deploys
 
